@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-{application-name-here}::Application.config.secret_key_base = secure_token
+Siteadmin::Application.config.secret_key_base = secure_token
