@@ -2,6 +2,21 @@
 
 > Back end for personal site administration
 
+- page
+  A static page for internal use only.
+
+- content
+  The primary dynamic piece of content to be consumed by a web service.
+
+- type
+  Page types which will hold lists of fields available to a particular type of content.
+
+- field
+  Different fields available to a piece of content.
+
+- site
+  Sites that pieces of content are available to. This should contain a key so that only particular sites can access content with this site field.
+
 ---
 
 ## Application Setup Instructions
