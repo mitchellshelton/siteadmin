@@ -1,0 +1,10 @@
+<div class="content-listing">
+  <li class="list-nav-item"><%= link_to "Create New Content", new_content_path, class: "list-nav-link" %></li>
+  <ul class="content-list">
+    <% @contents.each do |content| %>
+      <li class="content-item">
+        <%= link_to(content.title, content, class: "content-listing-link") %>
+      </li>
+    <% end %>
+  </ul>
+</div>

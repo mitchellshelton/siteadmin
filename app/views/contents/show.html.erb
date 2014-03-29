@@ -1,0 +1,17 @@
+<article>
+  <header>
+    <h1><%= @content.title %></h1>
+  </header>
+
+  <h3>Body</h3>
+  <p>
+    <%= @content.body %>
+  </p>
+
+  <footer>
+    <nav>
+      <%= link_to "Edit", edit_content_path(@content) %>
+      <%= link_to "Delete", @content, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </nav>
+  </footer>
+</article>

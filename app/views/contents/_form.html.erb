@@ -1,0 +1,17 @@
+<%= form_for(@content) do |f| %>
+  <%= render "shared/errors", object: @content %>
+  <fieldset>
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title, autofocus: true %>
+    </p>
+    <p>
+      <%= f.label :body %>
+      <%= f.text_field :body %>
+    </p>
+    <p>
+      <%= f.submit %>
+      <%= link_to "Cancel", contents_path %>
+    </p>
+  </fieldset>
+<% end %>
