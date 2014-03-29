@@ -1,1 +1,35 @@
 @import "bootstrap";
+
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0px auto;
+}
+#nav {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 5px;
+}
+.list-nav-item {
+  display: inline;
+  margin: 0px 5px;
+}
+#logo {
+  padding-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #efefef;
+  line-height: 60px;
+  float: left;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

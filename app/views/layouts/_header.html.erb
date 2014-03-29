@@ -1,8 +1,11 @@
 <header id="header">
-  <nav id="nav">
-    <ul class="pull-right">
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <%= link_to "Site Administration", root_path, id: "logo" %>
+    <nav id="nav">
+      <ul class="list-nav">
+        <li class="list-nav-item"><%= link_to "Home", root_path, class: "list-nav-link" %></li>
+        <li class="list-nav-item"><%= link_to "About", about_path, class: "list-nav-link" %></li>
+      </ul>
+    </nav>
+  </div>
 </header>
